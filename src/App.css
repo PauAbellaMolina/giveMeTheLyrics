@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+/*GENERAL*/
+.redFnt {
+  color: #d7385e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*HEADER DESKTOP*/
+.HeaderDesktop {
+  width: 100%;
+  padding: 3% 0 0 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 7.5vw;
+  text-shadow: 0.05em 0.055em 0px #e7d39f;
 }
 
-.App-link {
-  color: #61dafb;
+/*MAIN (MIDDLE) SECTION DESKTOP*/
+.MainDesktop {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .MainDesktop form {
+    width: 70%;
+    display: flex;
+    flex-flow: column;
   }
-  to {
-    transform: rotate(360deg);
+  .MainDesktop form input {
+    height: 2.5em;
+    text-align: center;
+    font-size: 1.7em;
+    margin: 1.2em 0 0 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #815a8a;
+    color: #e7d39f;
   }
-}
+    .MainDesktop form button {
+      position: fixed;
+      width: 100%;
+      height: calc(50vh - 5vw); /*MAYBE 55vh*/
+      bottom: 0;
+      left: 0;
+      padding: 0;
+      border: none;
+      border-radius: 50px 50px 0 0;
+      background-color: #815a8a;
+      color: #e7d39f;
+      font-size: 8vw;
+    }
