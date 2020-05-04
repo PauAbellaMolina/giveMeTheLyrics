@@ -1,4 +1,13 @@
 /*GENERAL*/
+::selection {
+  color: #d7385e;
+	background: #e7d39f;
+}
+
+input:focus{
+  outline-width: 0;
+}
+
 .redFnt {
   color: #d7385e;
 }
@@ -39,7 +48,8 @@
     .Main form button {
       position: fixed;
       width: 100%;
-      height: calc(55vh - 5vw);
+      height: 20vw;
+      /* height: calc(55vh - 5vw); */
       bottom: 0;
       left: 0;
       padding: 0;

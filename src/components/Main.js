@@ -44,8 +44,8 @@ import '../App.css'
                 <div className="Main">
                     <Header title={title} />
                     <form method="post" onSubmit={handleSubmit}>
-                        <input type="text" pattern="[a-zA-Z0-9-]+" name="artistInput" value={artist} onChange={SetArtistFunc} autoFocus={focusA} placeholder="ARTIST" required />
-                        <input type="text" pattern="[a-zA-Z0-9-]+" name="songInput" value={song} onChange={SetSongFunc} autoFocus={focusS} placeholder="SONG" required />
+                        <input type="text" pattern="[.'a-zA-Z0-9- ]+" name="artistInput" value={artist} onChange={SetArtistFunc} autoFocus={focusA} placeholder="ARTIST" required />
+                        <input type="text" pattern="[.'a-zA-Z0-9- ]+" name="songInput" value={song} onChange={SetSongFunc} autoFocus={focusS} placeholder="SONG" required />
                         <button>GO!</button>
                     </form>
                 </div>
