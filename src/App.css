@@ -4,41 +4,42 @@
 }
 
 /*HEADER DESKTOP*/
-.HeaderDesktop {
+.Header {
   width: 100%;
   padding: 3% 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 7.5vw;
+  text-align: center;
   text-shadow: 0.05em 0.055em 0px #e7d39f;
 }
 
 /*MAIN (MIDDLE) SECTION DESKTOP*/
-.MainDesktop {
+.Main {
   display: flex;
   flex-flow: column;
   align-items: center;
 }
-  .MainDesktop form {
+  .Main form {
     width: 70%;
     display: flex;
     flex-flow: column;
   }
-  .MainDesktop form input {
+  .Main form input {
     height: 2.5em;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.5em;
     margin: 1.2em 0 0 0;
     border: none;
     border-radius: 10px;
     background-color: #815a8a;
     color: #e7d39f;
   }
-    .MainDesktop form button {
+    .Main form button {
       position: fixed;
       width: 100%;
-      height: calc(50vh - 5vw); /*MAYBE 55vh*/
+      height: calc(55vh - 5vw);
       bottom: 0;
       left: 0;
       padding: 0;
@@ -52,15 +53,22 @@
   /*LYRICS COMPONENT INSIDE MAIN DESKTOP*/
   .lyricsComponent {
     width: 100%;
-    margin: 3em 0 3em 0;
+    margin: 3em 0 10em 0;
     padding: 0 1em 0 1em;
     white-space: pre-line;
     text-align: center;
     font-size: 1.8vmin;
   }
 
+  .fetching {
+    width: 100%;
+    margin: 1em 0 0 0;
+    text-align: center;
+    font-size: 8vw;
+  }
+
   /*GO BACK BUTTON*/
-  .MainDesktop button {
+  .Main button {
     position: fixed;
     bottom: 0;
     left: 0;

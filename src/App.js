@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react'
-import HeaderDesktop from './components/HeaderDesktop'
-import MainDesktop from './components/MainDesktop'
+import React from 'react'
+import Main from './components/Main'
 
 function App() {
   return (
     <div>
-      <MainDesktop />
+      <Main />
     </div>
   )
 }
