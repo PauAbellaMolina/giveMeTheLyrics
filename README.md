@@ -5,4 +5,4 @@ Super simple but aesthetic React Web App that uses Lyrics.ovh API to retrieve th
 
 🤓 This is my first React Project yay! 🎉🎉🎉
 
-[pauabella.dev/GiveMeTheLyrics](https://pauabella.dev/GiveMeTheLyrics "Take a look")
+[lyrics.pauabella.dev](https://pauabella.dev/GiveMeTheLyrics "Take a look")
