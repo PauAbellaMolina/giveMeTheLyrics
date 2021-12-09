@@ -8,24 +8,16 @@ function LyricsMain(props) {
     const [response, setResponse] = useState("")
 
     /* API CALL FUNCTION */
-    // async function fetchData() {
-    //     const res = await fetch(`https://api.lyrics.ovh/v1/${props.artist}/${props.song}`)
-    //     res
-    //     .json()
-    //     .then(res => setResponse(res))
-    //     .then(setFetched(true))
-    // }
+    const fetchData = async () => {
+        const res = await fetch(`https://api.lyrics.ovh/v1/${props.artist}/${props.song}`)
+        res
+        .json()
+        .then(res => setResponse(res))
+        .then(setFetched(true))
+    }
 
     /* WHEN COMPONENT MOUNTS -> CALLS THE API */
     useEffect(() => {
-        async function fetchData() {
-            const res = await fetch(`https://api.lyrics.ovh/v1/${props.artist}/${props.song}`)
-            res
-            .json()
-            .then(res => setResponse(res))
-            .then(setFetched(true))
-        }
-
         fetchData();
     }, [])
     
