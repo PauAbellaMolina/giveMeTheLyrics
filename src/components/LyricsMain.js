@@ -18,13 +18,15 @@ function LyricsMain(props) {
 
     /* WHEN COMPONENT MOUNTS -> CALLS THE API */
     useEffect(() => {
-        async () => {
+        async function fetchData() {
             const res = await fetch(`https://api.lyrics.ovh/v1/${props.artist}/${props.song}`)
             res
             .json()
             .then(res => setResponse(res))
             .then(setFetched(true))
         }
+
+        fetchData();
     }, [])
     
     let values = Object.values(response)
